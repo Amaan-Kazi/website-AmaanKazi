@@ -1,0 +1,111 @@
+:root {
+    /* VARIABLES */
+    --background: #121212;
+    --text: #F2EAEA;
+    --text2: #9E9E9E;
+    --primary: #1E1E1E;
+    --secondary: #0f6eeb;
+}
+
+html, body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+
+    background-color: var(--background);
+    user-select: none;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    width: 75vw;
+}
+
+#Header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Title {
+    font-family: Poppins, sans-serif;
+    
+    font-size: 50px;
+    color: var(--text);
+    user-select: text;
+}
+
+#SubTitle {
+    font-family: Poppins, sans-serif;
+    font-size: 25px;
+    color: var(--text2);
+}
+
+#Contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: Poppins, sans-serif;
+    font-size: 25px;
+    padding: 2.5px;
+    color: var(--text2)
+}
+
+#Links {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-evenly;
+}
+
+.LinksRow {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: var(--primary);
+    width: 45%;
+    height: 100px;
+    margin: 2px;
+
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+
+    font-family: Poppins, sans-serif;
+}
+
+.LinkTitle {
+    font-size: 40px;
+    color: var(--text);
+}
+.LinkInfo {
+    font-size: 20px;
+    color: var(--text2);
+}
+
+.Link:hover {
+    margin: 0px;
+    border-width: 3px;
+    border-color: var(--secondary);
+}
+
+.LinkHR {
+    width: calc(100% - 2px);
+    margin: 0;
+}
