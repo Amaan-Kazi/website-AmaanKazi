@@ -18,6 +18,7 @@ window.onresize = function() {
 const title = document.getElementById("Title");
 const subTitle = document.getElementById("SubTitle");
 
+
 window.onload = function() {
     // Emtpy the text
     title.textContent = "\u00a0";
@@ -34,14 +35,14 @@ window.onload = function() {
 
         if (i < titleText.length)
         {
-            title.style.borderRight = "1px solid white"
+            title.style.borderRight = "1px solid white";
             title.textContent += titleText[i];
             i++;
         }
         else
         {
-            title.style.borderRight = "0px"
-            clearInterval(id)
+            title.style.borderRight = "0px";
+            clearInterval(id);
 
             setTimeout(function() {
                 let id2 = setInterval(function() {
@@ -49,14 +50,14 @@ window.onload = function() {
 
                     if (j < subTitleText.length)
                     {
-                        subTitle.style.borderRight = "1px solid white"
+                        subTitle.style.borderRight = "1px solid white";
                         subTitle.textContent += subTitleText[j];
                         j++
                     }
                     else
                     {
-                        subTitle.style.borderRight = "0px"
-                        clearInterval(id2)
+                        subTitle.style.borderRight = "0px";
+                        clearInterval(id2);
                     }
                 }, 150);
             }, 500);
